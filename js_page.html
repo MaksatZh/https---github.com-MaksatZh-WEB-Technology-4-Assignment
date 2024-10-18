@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>MyJS</title>
+</head>
+<body>
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 1. Implementing a button-->
+    <div class="task1" >
+        <h1>Your favorite city</h1>
+    
+        <button type = "by" onclick="document.getElementById('Ast').src='img-js/Astana.jpeg'"> Astana </button>
+        <img id = "Ast" src="img-js/Astana.jpeg" alt="Astana">
+        <button type="button" onclick="document.getElementById('Ast').src ='img-js/Almaty.jpeg'">Almaty</button>
+    
+    <br><br><br><br>
+    
+        <p id = "Hello">Do  this text Larger</p>
+        <button type="button" onclick="document.getElementById('Hello').style.fontSize='55px'"> larger </button>
+
+
+    <br><br><br><br>
+
+        <h2>If you would like change the background color just click the button below</h2>
+        <button class="btn btn-primary" onclick="changeColor()">Change Background Color</button>
+        <script src="js/script.js"></script>
+
+
+    <br><br><br><br>
+
+        <h1 id="demo">Motivation</h1>
+        <button type="button" onclick='document.getElementById("demo").innerHTML = "“Learn as if you will live forever, live like you will die tomorrow.” —Mahatma Gandhi"'>Click Me!</button>
+    
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    </div>
+
+
+
+    <!--2 Interactive To-Do List-->
+
+
+    <div id="myDIV" class="header">
+        <h2>My To Do List</h2>
+        <input type="text" id="myInput" placeholder="Title...">
+        <span onclick="newElement()" class="addBtn">Add</span>
+      </div>
+      
+    <ul id="myUL">
+        <li class="">Hit the gym</li>
+        <li class="checked">Pay bills</li>
+        <li>Meet George</li>
+        <li>Buy eggs</li>
+        <li>Read a book</li>
+        <li>Organize office</li>
+    </ul>
+
+      <script src="js/toDo.js" defer></script>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+    <!--3 Number sorting tool-->
+
+
+    <div class="container mt-5">
+        <h1 class="text-center">Number Sorting Tool</h1>
+        <form id="sortingForm" class="mt-4">
+            <div class="mb-3">
+                <label for="numbersInput" class="form-label">Enter numbers (comma-separated):</label>
+                <input type="text" id="numbersInput" class="form-control" placeholder="E.g. 5, 12, 3, 8, 1" required>
+                <div id="inputError" class="text-danger mt-2"></div>
+            </div>
+            <div class="mb-3">
+                <label for="sortOrder" class="form-label">Select sort order:</label>
+                <select id="sortOrder" class="form-select">
+                    <option value="asc">Ascending</option>
+                    <option value="desc">Descending</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Sort</button>
+        </form>
+
+        <div class="mt-4">
+            <h2>Sorted Numbers:</h2>
+            <p id="sortedNumbers" class="fs-5"></p>
+        </div>
+    </div>
+
+    <script src="js/numOfSort.js"></script>
+
+
+
+
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+    <!--4 Calculator-->
+    <h1 style="text-align: center;">My calculator</h1>
+    
+    <div id="calculator" class="calc" >
+        <input id="display" readonly >
+        <div id="keys" >
+            <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('-')" class="operator-btn">-</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('*')" class="operator-btn">*</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('/')" class="operator-btn">/</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="clearDisplay()" class="operator-btn">C</button>
+        </div>
+    </div>
+    <script src="js/calc.js"></script>
+
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+
+    <!--5. Tax calculator-->
+
+<div class="tax-container">
+    <h1>Car Tax Calculator</h1>
+    <label for="tax-price">Enter car price ($):</label>
+    <input type="number" id="tax-price" placeholder="Car price">
+    <button class="tax-btn" onclick="calculateTax()">Calculate Tax</button>
+    <p class="tax-result" id="tax-result"></p>
+</div>
+
+<!-- Подключение скриптов -->
+<script src="js/tax.js" defer></script>
+
+
+
+</body>
+</html>

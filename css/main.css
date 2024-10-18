@@ -1,0 +1,140 @@
+body
+{
+    background-position:center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    font-family: Arial, sans-serif;
+    color: #046d00;
+    margin-bottom: -2%;
+    padding: 0;
+    text-align: center; 
+    
+    
+}
+
+.h-header
+{
+    color: hsl(118, 100%, 21%);
+    font-family: "Allerta",  sans-serif;
+    font-size: xx-large;
+    text-align: center;
+}
+
+
+.img-home {
+    width: 350px;
+    height: auto;
+    border-radius: 10%;
+    border: 3px solid #000000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;   
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    
+}
+
+.image{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+
+}
+
+.p-home{
+    text-align: center;
+    color: #046d00;
+    font-size:x-large;
+    font-family:Allerta;
+    margin: 10px;
+    
+}
+
+
+.navbar ul{
+    background-color: rgb(80, 80, 80);
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    
+    
+    
+}
+
+
+.navbar a
+{
+    font-size:x-large;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    display: block;
+    text-align: centzzer;
+    
+   
+}
+
+    .navbar a:hover{
+        background-color: hsl(113, 24%, 40%);
+    }
+.navbar li{
+    float: left;
+    
+}
+
+.card-container {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+}
+
+
+
+
+
+/* Hobbies */
+
+#hobbies {
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+}
+.header-hobbies {
+    font-size:xx-large;
+    color: #006699;
+}
+.img-hobbies{
+    
+    height: 300px;
+}
+th{
+    font-size: xx-large;
+}
+.p-hobbies{
+    font-size: xx-large;
+}
+.video-hobbies{
+    width: 500px;
+}
+
+.card{
+    display: flex; /* Включаем Flexbox */
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    height: 100vh; /* Высота контейнера на весь экран */
+    background-color: #f8f9fa; /* Фоновый цвет контейнера */
+        
+}
+
+/*Contact Me*/
+
+
+
+
+
+
